@@ -17,16 +17,25 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather">
-          <h1>Alpharetta, GA</h1>
-          <ul>
-            <li>Monday 1:00 PM</li>
-            <li>Cloudy</li>
-          </ul>
+          <div class="overview">
+            <h1>Alpharetta, GA</h1>
+            <ul>
+              <li>Monday 1:00 PM</li>
+              <li>Cloudy</li>
+            </ul>
+          </div>
           <div class="row">
             <div class="col-6">
-              <span class="weather-emoji">🌨</span>
-              <span class="current-temperature">1</span>
-              <span class="degree">ºF | ºC</span>
+              <div class="clearfix weather-temperature">
+                <span class="weather-emoji float-left">🌨</span>
+                <span class="float-left">
+                  <strong class="current-temperature">1</strong>
+                  <span class="degree">
+                    <a href="#">ºF</a>
+                    | <a href="#">ºC</a>
+                  </span>
+                </span>
+              </div>
             </div>
             <div class="col-6">
               <ul class="temp-description">
