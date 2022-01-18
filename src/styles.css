@@ -38,11 +38,6 @@ li:first-letter {
   margin-bottom: 20px;
 }
 
-.weather-emoji {
-  font-size: 40px;
-  padding: 0;
-}
-
 .current-temperature {
   font-size: 48px;
   line-height: 60px;
@@ -70,10 +65,11 @@ li:first-letter {
   text-decoration: none;
 }
 
-.weather-temperature .weather-emoji {
-  margin-right: 10px;
+.weather-temperature img {
+  margin-right: 5px;
+  height: 80px;
+  width: 80px;
 }
-
 .weather-temperature strong {
   font-weight: 400;
 }
