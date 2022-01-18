@@ -73,6 +73,7 @@ function showCelciusTemp(event) {
 }
 
 let celciusTemperature = null;
+search("Alpharetta");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", changeCity);
