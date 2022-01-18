@@ -73,3 +73,12 @@ li:first-letter {
 .weather-temperature strong {
   font-weight: 400;
 }
+
+.degree .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.degree .active:hover {
+  text-decoration: none;
+}
