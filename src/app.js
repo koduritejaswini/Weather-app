@@ -118,6 +118,19 @@ function displayForecast(response) {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+
+function showPosition(position) {
+  let lat = position.coords.latitude;
+  let long = position.coords.longitude;
+  let apiKey = "f1e5044fce63dedfebf7bf6f1c98f16b";
+  let apiUrl = "https://api.openweathermap.org/data/2.5/weather";
+  let apiUrl2 = `${apiUrl}?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
+  axios.get(`${apiUrl2}`).then(displayTemperature);
+}
+
+function DisplayCurrentCity(event) {
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
 let celciusTemperature = null;
 search("Alpharetta");
 
@@ -129,3 +142,6 @@ farenheitLink.addEventListener("click", showFarenheitTemp);
 
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", showCelciusTemp);
+
+let currentCityName = document.querySelector("#current-city");
+currentCityName.addEventListener("click", DisplayCurrentCity);
