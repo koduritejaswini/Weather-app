@@ -95,7 +95,7 @@ li:first-letter {
 
 .weather-forecast-day {
   font-size: 16px;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .weather-forecast-temp {
@@ -103,9 +103,17 @@ li:first-letter {
 }
 
 .weather-forecast-temp-min {
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 #current-city {
   color: white;
+}
+
+.note {
+  color: yellow;
+}
+
+.note-temp {
+  color: brown;
 }
